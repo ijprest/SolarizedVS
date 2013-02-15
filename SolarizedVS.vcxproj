@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Dark|Win32">
+      <Configuration>Dark</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Colors.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source.vstheme" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D1A9B6C7-EDC5-4AD7-B890-096187A365EE}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <ProjectName>SolarizedVS</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Dark|Win32'">
+    <PlatformToolset>v110</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dark|Win32'">
+    <NMakeBuildCommandLine>"$(VCInstallDir)bin/cl.exe" /EP /FI "$(ProjectDir)Colors.h" "$(ProjectDir)Source.vstheme" &gt; "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"$(VCInstallDir)bin/cl.exe" /EP /FI "$(ProjectDir)Colors.h" "$(ProjectDir)Source.vstheme" &gt; "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>del "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)Solarized-$(Configuration).vstheme</NMakeOutput>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
