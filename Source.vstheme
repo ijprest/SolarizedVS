@@ -1,5 +1,5 @@
 <Themes>
-	<Theme Name="Solarized" GUID="{04ee0543-7f5c-4e8d-ae6a-6da11dac810c}">
+	<Theme Name=THEME_NAME GUID=THEME_GUID>
 		<Category Name="Autos" GUID="{a7ee6bee-d0aa-4b2f-ad9d-748276a725f6}">
 			COLOR("Plain Text", content, void)
 			COLOR("SelectedText", content_bold, void)

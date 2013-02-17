@@ -45,40 +45,17 @@
 #define color_cyan								FF2AA198
 #define color_green								FF859900
 
+//
 // Values to represent special VS color definitions
+//
 #define auto											color,auto			// "Automatic"
 #define default										color,default		// "Default"
 #define void											color,void			// not-specified
-
-// Symbolic names; these are the names we'll use elsewhere,
-// and we'll re-define them for different themes (e.g., light
-// vs. dark).
-#define background_accent					color_base03
-#define background								color_base02
-#define content_dim								color_base01
-#define content_faint							color_base00
-#define content_grey							color_base0
-#define content										color_base1
-#define content_bold							color_base2
-#define content_extrabold					color_base3
-
-#define theme_main								color_blue
-#define theme_accent							color_violet
-#define theme_accent2							color_cyan
-#define theme_lightbold						color_yellow
-#define theme_bold								color_orange
-#define theme_changed							color_red
-
-#define theme_commentbackground		FF073E4B				// slightly brighter than color_base02; used as a comment background only
-#define theme_visiblewhitespace		FF094A5B				// dimmer than color_base01; used for visible-whitespace only
-
-#define transp_lighten						60FFFFFF
-#define transp_darken							60000000
-
 #define unknown_color							FFFF00FF				// used for items we don't yet understand
 
-
+//
 // Helper macros
+//
 #define _FOREGROUND4_(x) <Foreground Type="CT_RAW" Source=#x />
 #define _FOREGROUND4_auto(x) <Foreground Type="CT_AUTOMATIC" Source="00000000" />
 #define _FOREGROUND4_void(x)
@@ -99,4 +76,3 @@
 
 #define COLOR(theName, theForeground, theBackground) \
 	<Color Name=theName>_BACKGROUND(theBackground)_FOREGROUND(theForeground)</Color>
-

@@ -8,6 +8,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Colors.h" />
+    <ClInclude Include="Dark.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Source.vstheme" />
@@ -27,8 +28,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dark|Win32'">
-    <NMakeBuildCommandLine>"$(VCInstallDir)bin/cl.exe" /EP /FI "$(ProjectDir)Colors.h" "$(ProjectDir)Source.vstheme" &gt; "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeBuildCommandLine>
-    <NMakeReBuildCommandLine>"$(VCInstallDir)bin/cl.exe" /EP /FI "$(ProjectDir)Colors.h" "$(ProjectDir)Source.vstheme" &gt; "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeReBuildCommandLine>
+    <NMakeBuildCommandLine>"$(VCInstallDir)bin/cl.exe" /EP /FI "$(ProjectDir)$(Configuration).h" "$(ProjectDir)Source.vstheme" &gt; "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"$(VCInstallDir)bin/cl.exe" /EP /FI "$(ProjectDir)$(Configuration).h" "$(ProjectDir)Source.vstheme" &gt; "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>del "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeCleanCommandLine>
     <NMakeOutput>$(OutDir)Solarized-$(Configuration).vstheme</NMakeOutput>
   </PropertyGroup>
