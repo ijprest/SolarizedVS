@@ -320,95 +320,125 @@
 			COLOR("ExtensionManagerStarHighlight2", void, color_yellow)
 			COLOR("ExtensionManagerStarInactive1", void, content_dim)
 			COLOR("ExtensionManagerStarInactive2", void, content_dim)
+
+			//
+			// File Tabs
+			//
+
+			// Hover
+			COLOR("FileTabHotBorder", void, theme_tab_hover_text)										// ok
+			COLOR("FileTabHotGlyph", void, theme_tab_hover_text)										// ok
+			COLOR("FileTabHotGradientBottom", void, theme_tab_hover)								// ok
+			COLOR("FileTabHotGradientTop", void, theme_tab_hover)										// ok
+			COLOR("FileTabHotText", void, theme_tab_hover_text)											// ok
+			COLOR("FileTabButtonHoverInactive", void, theme_tab_hover_text)					// ok
+			COLOR("FileTabButtonHoverInactiveBorder", void, theme_tab_hover)				// ok
+			COLOR("FileTabButtonHoverInactiveGlyph", void, theme_tab_hover)					// ok
+
+			// Unselected
+			COLOR("FileTabText", void, theme_tab_unselected_text)										// ok
+			COLOR("FileTabInactiveGlyph", void, theme_tab_unselected_text)
+			COLOR("FileTabButtonDownInactive", void, theme_tab_hover_text)					// ok
+			COLOR("FileTabButtonDownInactiveBorder", void, theme_tab_inactive)			// ok
+			COLOR("FileTabButtonDownInactiveGlyph", void, theme_tab_inactive)				// ok
+
+			// Selected & Active
+			COLOR("FileTabDocumentBorderBackground", void, theme_tab_active)				// ok
+			COLOR("FileTabSelectedBackground", void, theme_tab_active)							// ok
+			COLOR("FileTabSelectedBorder", void, theme_tab_active)									// ok
+			COLOR("FileTabSelectedGradientBottom", void, theme_tab_active)					// ok
+			COLOR("FileTabSelectedGradientMiddle1", void, theme_tab_active)					// ok
+			COLOR("FileTabSelectedGradientMiddle2", void, theme_tab_active)					// ok
+			COLOR("FileTabSelectedGradientTop", void, theme_tab_active)							// ok
+			COLOR("FileTabSelectedText", void, theme_tab_active_text)								// ok
+			COLOR("FileTabButtonDownSelectedActive", void, theme_tab_inactive)			// ok
+			COLOR("FileTabButtonDownSelectedActiveBorder", void, theme_tab_active)	// ok
+			COLOR("FileTabButtonDownSelectedActiveGlyph", void, theme_tab_active)		// ok
+			COLOR("FileTabButtonSelectedActiveGlyph", void, theme_tab_active_text)	// ok
+			COLOR("FileTabButtonHoverSelectedActive", void, theme_tab_active_text)	// ok
+			COLOR("FileTabButtonHoverSelectedActiveBorder", void, theme_tab_active)	// ok
+			COLOR("FileTabButtonHoverSelectedActiveGlyph", void, theme_tab_active)	// ok
+
+			// Selected & Inactive
+			COLOR("FileTabInactiveBorder", void, theme_tab_inactive)										// ok
+			COLOR("FileTabInactiveDocumentBorderBackground", void, theme_tab_inactive)	// ok
+			COLOR("FileTabInactiveDocumentBorderEdge", void, theme_tab_inactive)				// ok
+			COLOR("FileTabInactiveGradientBottom", void, theme_tab_inactive)						// ok
+			COLOR("FileTabInactiveGradientTop", void, theme_tab_inactive)								// ok
+			COLOR("FileTabInactiveText", void, theme_tab_inactive_text)									// ok
+			COLOR("FileTabButtonDownSelectedInactive", void, theme_tab_inactive)					// ok
+			COLOR("FileTabButtonDownSelectedInactiveBorder", void, theme_tab_hover_text)	// ok
+			COLOR("FileTabButtonDownSelectedInactiveGlyph", void, theme_tab_hover_text)		// ok
+			COLOR("FileTabButtonSelectedInactiveGlyph", void, theme_tab_inactive_text)		// ok
+			COLOR("FileTabButtonHoverSelectedInactive", void, theme_tab_inactive_text)		// ok
+			COLOR("FileTabButtonHoverSelectedInactiveBorder", void, theme_tab_hover_text)	// ok
+			COLOR("FileTabButtonHoverSelectedInactiveGlyph", void, theme_tab_hover_text)	// ok
+
+			// Multi-select
+			COLOR("FileTabLastActiveDocumentBorderBackground", void, theme_tab_inactive)	// ok
+			COLOR("FileTabLastActiveDocumentBorderEdge", void, theme_tab_inactive)				// ok
+			COLOR("FileTabLastActiveGlyph", void, theme_tab_inactive_text)								// ok
+			COLOR("FileTabLastActiveGradientBottom", void, theme_tab_inactive)						// ok
+			COLOR("FileTabLastActiveGradientMiddle1", void, theme_tab_inactive)						// ok
+			COLOR("FileTabLastActiveGradientMiddle2", void, theme_tab_inactive)						// ok
+			COLOR("FileTabLastActiveGradientTop", void, theme_tab_inactive)								// ok
+			COLOR("FileTabLastActiveText", void, theme_tab_inactive_text)									// ok
+
+			// What are these for?
 			COLOR("FileTabBorder", void, unknown_color)
-			COLOR("FileTabButtonDownInactive", void, theme_main)
-			COLOR("FileTabButtonDownInactiveBorder", void, content)
-			COLOR("FileTabButtonDownInactiveGlyph", void, content)
-			COLOR("FileTabButtonDownSelectedActive", void, content)
-			COLOR("FileTabButtonDownSelectedActiveBorder", void, theme_main)
-			COLOR("FileTabButtonDownSelectedActiveGlyph", void, theme_main)
-			COLOR("FileTabButtonDownSelectedInactive", void, content)
-			COLOR("FileTabButtonDownSelectedInactiveBorder", void, theme_main)
-			COLOR("FileTabButtonDownSelectedInactiveGlyph", void, theme_main)
-			COLOR("FileTabButtonHoverInactive", void, theme_main)
-			COLOR("FileTabButtonHoverInactiveBorder", void, content_bold)
-			COLOR("FileTabButtonHoverInactiveGlyph", void, content_bold)
-			COLOR("FileTabButtonHoverSelectedActive", void, content_bold)
-			COLOR("FileTabButtonHoverSelectedActiveBorder", void, theme_main)
-			COLOR("FileTabButtonHoverSelectedActiveGlyph", void, theme_main)
-			COLOR("FileTabButtonHoverSelectedInactive", void, content_bold)
-			COLOR("FileTabButtonHoverSelectedInactiveBorder", void, theme_main)
-			COLOR("FileTabButtonHoverSelectedInactiveGlyph", void, theme_main)
-			COLOR("FileTabButtonProvisionalDownInactive", void, color_violet)
-			COLOR("FileTabButtonProvisionalDownInactiveBorder", void, content_grey)
-			COLOR("FileTabButtonProvisionalDownInactiveGlyph", void, content_grey)
-			COLOR("FileTabButtonProvisionalDownSelectedActive", void, content_grey)
-			COLOR("FileTabButtonProvisionalDownSelectedActiveBorder", void, color_violet)
-			COLOR("FileTabButtonProvisionalDownSelectedActiveGlyph", void, color_violet)
-			COLOR("FileTabButtonProvisionalDownSelectedInactive", void, content_grey)
-			COLOR("FileTabButtonProvisionalDownSelectedInactiveBorder", void, color_violet)
-			COLOR("FileTabButtonProvisionalDownSelectedInactiveGlyph", void, color_violet)
-			COLOR("FileTabButtonProvisionalHoverGlyph", void, color_violet)
-			COLOR("FileTabButtonProvisionalHoverInactive", void, color_violet)
-			COLOR("FileTabButtonProvisionalHoverInactiveBorder", void, content_bold)
-			COLOR("FileTabButtonProvisionalHoverInactiveGlyph", void, content_bold)
-			COLOR("FileTabButtonProvisionalHoverSelectedActive", void, content_bold)
-			COLOR("FileTabButtonProvisionalHoverSelectedActiveBorder", void, color_violet)
-			COLOR("FileTabButtonProvisionalHoverSelectedActiveGlyph", void, color_violet)
-			COLOR("FileTabButtonProvisionalHoverSelectedInactive", void, content_bold)
-			COLOR("FileTabButtonProvisionalHoverSelectedInactiveBorder", void, color_violet)
-			COLOR("FileTabButtonProvisionalHoverSelectedInactiveGlyph", void, color_violet)
-			COLOR("FileTabButtonProvisionalInactiveGlyph", void, content_grey)
-			COLOR("FileTabButtonProvisionalSelectedActiveGlyph", void, content_bold)
-			COLOR("FileTabButtonProvisionalSelectedInactiveGlyph", void, content_bold)
-			COLOR("FileTabButtonSelectedActiveGlyph", void, content_bold)
-			COLOR("FileTabButtonSelectedInactiveGlyph", void, content_bold)
 			COLOR("FileTabChannelBackground", void, unknown_color)
-			COLOR("FileTabDocumentBorderBackground", void, theme_main)
 			COLOR("FileTabDocumentBorderHighlight", void, unknown_color)
 			COLOR("FileTabDocumentBorderShadow", void, unknown_color)
-			COLOR("FileTabGradientDark", void, content_grey)
-			COLOR("FileTabGradientLight", void, content_grey)
-			COLOR("FileTabHotBorder", void, theme_main)
-			COLOR("FileTabHotGlyph", void, theme_main)
-			COLOR("FileTabHotGradientBottom", void, content_bold)
-			COLOR("FileTabHotGradientTop", void, content_bold)
-			COLOR("FileTabHotText", void, theme_main)
-			COLOR("FileTabInactiveBorder", void, content)
-			COLOR("FileTabInactiveDocumentBorderBackground", void, content)
-			COLOR("FileTabInactiveDocumentBorderEdge", void, content)
-			COLOR("FileTabInactiveGlyph", void, content_bold)
-			COLOR("FileTabInactiveGradientBottom", void, content)
-			COLOR("FileTabInactiveGradientTop", void, content)
-			COLOR("FileTabInactiveText", void, content_bold)
-			COLOR("FileTabLastActiveDocumentBorderBackground", void, unknown_color)
-			COLOR("FileTabLastActiveDocumentBorderEdge", void, unknown_color)
-			COLOR("FileTabLastActiveGlyph", void, unknown_color)
-			COLOR("FileTabLastActiveGradientBottom", void, unknown_color)
-			COLOR("FileTabLastActiveGradientMiddle1", void, unknown_color)
-			COLOR("FileTabLastActiveGradientMiddle2", void, unknown_color)
-			COLOR("FileTabLastActiveGradientTop", void, unknown_color)
-			COLOR("FileTabLastActiveText", void, unknown_color)
-			COLOR("FileTabProvisionalHover", void, content_bold)
-			COLOR("FileTabProvisionalHoverBorder", void, color_violet)
-			COLOR("FileTabProvisionalHoverForeground", void, color_violet)
-			COLOR("FileTabProvisionalInactive", void, background_accent)
-			COLOR("FileTabProvisionalInactiveBorder", void, background_accent)
-			COLOR("FileTabProvisionalInactiveForeground", void, content_grey)
-			COLOR("FileTabProvisionalSelectedActive", void, color_violet)
-			COLOR("FileTabProvisionalSelectedActiveBorder", void, color_violet)
-			COLOR("FileTabProvisionalSelectedActiveForeground", void, content_bold)
+			COLOR("FileTabGradientDark", void, unknown_color)
+			COLOR("FileTabGradientLight", void, unknown_color)
+
+			//
+			// "Provisional" tabs (i.e., the temporary tabs on the right-hand side)
+			//
+
+			// Provisional Hover
+			COLOR("FileTabProvisionalHover", void, theme_tab_hover)																		// ok
+			COLOR("FileTabProvisionalHoverBorder", void, theme_tab_provisional)												// ok
+			COLOR("FileTabProvisionalHoverForeground", void, theme_tab_provisional)										// ok
+			COLOR("FileTabButtonProvisionalHoverGlyph", void, theme_tab_provisional)									// ok
+
+			// Provisional Unselected
+			COLOR("FileTabProvisionalInactive", void, theme_tab_unselected)														// ok
+			COLOR("FileTabProvisionalInactiveBorder", void, theme_tab_unselected)											// ok
+			COLOR("FileTabProvisionalInactiveForeground", void, theme_tab_unselected_text)						// ok
+			COLOR("FileTabButtonProvisionalInactiveGlyph", void, theme_tab_unselected_text)						// ok
+			COLOR("FileTabButtonProvisionalHoverInactive", void, theme_tab_provisional)								// ok
+			COLOR("FileTabButtonProvisionalHoverInactiveBorder", void, theme_tab_hover)								// ok
+			COLOR("FileTabButtonProvisionalHoverInactiveGlyph", void, theme_tab_hover)								// ok
+			COLOR("FileTabButtonProvisionalDownInactive", void, theme_tab_provisional)								// ok
+			COLOR("FileTabButtonProvisionalDownInactiveBorder", void, theme_tab_inactive)							// ok
+			COLOR("FileTabButtonProvisionalDownInactiveGlyph", void, theme_tab_inactive)							// ok
+
+			// Provisional Selected & Active
+			COLOR("FileTabProvisionalSelectedActive", void, theme_tab_provisional)										// ok
+			COLOR("FileTabProvisionalSelectedActiveBorder", void, theme_tab_provisional)							// ok
+			COLOR("FileTabProvisionalSelectedActiveForeground", void, theme_tab_active_text)					// ok
+			COLOR("FileTabButtonProvisionalSelectedActiveGlyph", void, theme_tab_active_text)					// ok
+			COLOR("FileTabButtonProvisionalHoverSelectedActive", void, theme_tab_active_text)					// ok
+			COLOR("FileTabButtonProvisionalHoverSelectedActiveBorder", void, theme_tab_provisional)		// ok
+			COLOR("FileTabButtonProvisionalHoverSelectedActiveGlyph", void, theme_tab_provisional)		// ok
+			COLOR("FileTabButtonProvisionalDownSelectedActive", void, theme_tab_inactive)							// ok
+			COLOR("FileTabButtonProvisionalDownSelectedActiveBorder", void, theme_tab_provisional)		// ok
+			COLOR("FileTabButtonProvisionalDownSelectedActiveGlyph", void, theme_tab_provisional)			// ok
+
+			// Provisional Selected & Inactive
 			COLOR("FileTabProvisionalSelectedInactive", void, content_grey)
 			COLOR("FileTabProvisionalSelectedInactiveBorder", void, content_grey)
 			COLOR("FileTabProvisionalSelectedInactiveForeground", void, content_bold)
-			COLOR("FileTabSelectedBackground", void, theme_main)
-			COLOR("FileTabSelectedBorder", void, theme_main)
-			COLOR("FileTabSelectedGradientBottom", void, theme_main)
-			COLOR("FileTabSelectedGradientMiddle1", void, theme_main)
-			COLOR("FileTabSelectedGradientMiddle2", void, theme_main)
-			COLOR("FileTabSelectedGradientTop", void, theme_main)
-			COLOR("FileTabSelectedText", void, content_bold)
-			COLOR("FileTabText", void, content)
+			COLOR("FileTabButtonProvisionalSelectedInactiveGlyph", void, content_bold)
+			COLOR("FileTabButtonProvisionalHoverSelectedInactive", void, content_bold)
+			COLOR("FileTabButtonProvisionalHoverSelectedInactiveBorder", void, theme_tab_provisional)	// ok
+			COLOR("FileTabButtonProvisionalHoverSelectedInactiveGlyph", void, theme_tab_provisional)	// ok
+			COLOR("FileTabButtonProvisionalDownSelectedInactive", void, theme_tab_inactive)						// ok
+			COLOR("FileTabButtonProvisionalDownSelectedInactiveBorder", void, theme_tab_provisional)	// ok
+			COLOR("FileTabButtonProvisionalDownSelectedInactiveGlyph", void, theme_tab_provisional)		// ok
+
+
 			COLOR("FormSmartTagActionTagBorder", void, unknown_color)
 			COLOR("FormSmartTagActionTagFill", void, unknown_color)
 			COLOR("FormSmartTagObjectTagBorder", void, unknown_color)

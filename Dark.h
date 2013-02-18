@@ -24,6 +24,8 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
+#include "Colors.h"
+
 // This is the "Dark" theme
 #define THEME_NAME								"Solarized Dark"
 #define THEME_GUID								"{82903FA5-A781-4088-BE17-526DFECCD587}"
@@ -58,12 +60,16 @@
 #define theme_border							content_dim
 
 // Tab colors
+#define theme_tab_unselected			background_accent
+#define theme_tab_unselected_text	content
+
 #define theme_tab_active					theme_main
 #define theme_tab_active_text			content_bold
+
 #define theme_tab_inactive				content_grey
 #define theme_tab_inactive_text		content_bold
+
 #define theme_tab_hover						content_bold
 #define theme_tab_hover_text			theme_main
-#define theme_tab_unselected			background
-#define theme_tab_unselected_text	content
+
 #define theme_tab_provisional			color_violet
