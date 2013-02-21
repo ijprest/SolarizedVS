@@ -186,7 +186,7 @@
 			COLOR("CommandBarMouseDownBackgroundBegin", void, content_extrabold)
 			COLOR("CommandBarMouseDownBackgroundEnd", void, content_extrabold)
 			COLOR("CommandBarMouseDownBackgroundMiddle", void, content_extrabold)
-			COLOR("CommandBarMouseDownBorder", void, unknown_color)
+			COLOR("CommandBarMouseDownBorder", void, theme_button_checked_border)
 			COLOR("CommandBarMouseOverBackgroundBegin", void, content_bold)
 			COLOR("CommandBarMouseOverBackgroundEnd", void, content_bold)
 			COLOR("CommandBarMouseOverBackgroundMiddle1", void, content_bold)
@@ -872,13 +872,13 @@
 			COLOR("ColorZAxis", void, unknown_color)
 		</Category>
 		<Category Name="Header" GUID="{4997f547-1379-456e-b985-2f413cdfa536}">
-			COLOR("Default", content, background)
-			COLOR("Glyph", void, content_faint)
-			COLOR("MouseDown", content_bold, content_faint)
-			COLOR("MouseDownGlyph", void, content_bold)
-			COLOR("MouseOver", content_bold, content_dim)
-			COLOR("MouseOverGlyph", void, content_bold)
-			COLOR("SeparatorLine", void, content_faint)
+			COLOR("Default", theme_header_text, theme_header)
+			COLOR("Glyph", void, theme_header_glyph)
+			COLOR("MouseDown", theme_header_down_text, theme_header_down)
+			COLOR("MouseDownGlyph", void, theme_header_down_text)
+			COLOR("MouseOver", theme_header_hover_text, theme_header_hover)
+			COLOR("MouseOverGlyph", void, theme_header_hover_text)
+			COLOR("SeparatorLine", void, theme_border)
 		</Category>
 		<Category Name="Immediate Window" GUID="{6bb65c5a-2f31-4bde-9f48-8a38dc0c63e7}">
 			COLOR("Inactive Selected Text", void, content_dim)
@@ -1346,42 +1346,51 @@
 			COLOR("SelectedText", content_bold, void)
 		</Category>
 		<Category Name="WorkItemEditor" GUID="{2138d120-456d-425e-80b5-88d2401fca23}">
-			COLOR("ActiveControl", unknown_color, unknown_color)
-			COLOR("ActiveControlBorder", void, unknown_color)
-			COLOR("ButtonSelectedOverride", void, unknown_color)
-			COLOR("DefaultControl", unknown_color, unknown_color)
-			COLOR("DefaultControlBorder", void, unknown_color)
-			COLOR("DropDownHover", unknown_color, unknown_color)
-			COLOR("DropDownPressed", unknown_color, unknown_color)
+			COLOR("ActiveControl", content, background)
+			COLOR("ActiveControlBorder", void, theme_border_active)
+			COLOR("ButtonSelectedOverride", void, theme_button_hover)
+			COLOR("DefaultControl", content, background)
+			COLOR("DefaultControlBorder", void, theme_border)
+
+			COLOR("DropDownHover", theme_button_hover_text, theme_button_hover)
+			COLOR("DropDownPressed", theme_button_down_text, theme_button_down)
 			COLOR("ErrorControl", unknown_color, unknown_color)
 			COLOR("ErrorControlBorder", void, unknown_color)
-			COLOR("Form", unknown_color, unknown_color)
+			COLOR("Form", unknown_color, background)
+
 			COLOR("Grid", content, background)
 			COLOR("GridActiveCell", content_bold, theme_main)
+
 			COLOR("GridActiveColumnHeader", unknown_color, unknown_color)
 			COLOR("GridActiveRowHeader", unknown_color, unknown_color)
+
 			COLOR("GridBorder", void, theme_border)
+
 			COLOR("GridCell", unknown_color, unknown_color)
-			COLOR("GridColumnHeader", content, background)
-			COLOR("GridColumnHeaderHover", unknown_color, unknown_color)
-			COLOR("GridColumnHeaderPressed", unknown_color, unknown_color)
+
+			COLOR("GridColumnHeader", theme_header_text, theme_header)
+			COLOR("GridColumnHeaderHover", theme_header_hover_text, theme_header_hover)
+			COLOR("GridColumnHeaderPressed", theme_header_down_text, theme_header_down)
+
 			COLOR("GridInactiveCell", unknown_color, unknown_color)
 			COLOR("GridRowHeader", unknown_color, unknown_color)
 			COLOR("GridSortedCell", unknown_color, unknown_color)
-			COLOR("GroupBox", unknown_color, unknown_color)
-			COLOR("HtmlControl", unknown_color, unknown_color)
-			COLOR("HtmlControlHyperlink", void, unknown_color)
-			COLOR("HtmlControlSecondaryText", void, unknown_color)
+			COLOR("GroupBox", theme_headertext, background)
+
+			COLOR("HtmlControl", content, background)
+			COLOR("HtmlControlHyperlink", void, theme_main)
+			COLOR("HtmlControlSecondaryText", void, theme_prompttext)
+
 			COLOR("InvalidControl", content, background)
 			COLOR("InvalidControlBorder", void, theme_changed)
-			COLOR("Label", unknown_color, unknown_color)
-			COLOR("PromptText", void, unknown_color)
+			COLOR("Label", content, background)
+			COLOR("PromptText", void, theme_prompttext)
 			COLOR("ReadOnlyControl", unknown_color, unknown_color)
 			COLOR("ReadOnlyControlBorder", void, unknown_color)
-			COLOR("TabHeader", unknown_color, unknown_color)
-			COLOR("TabHeaderActive", void, unknown_color)
-			COLOR("TabHeaderHover", void, unknown_color)
-			COLOR("TabItem", unknown_color, unknown_color)
+			COLOR("TabHeader", theme_tab_unselected_text, theme_tab_unselected)
+			COLOR("TabHeaderActive", void, theme_tab_active)
+			COLOR("TabHeaderHover", void, theme_tab_hover)
+			COLOR("TabItem", theme_tab_unselected_text, theme_tab_unselected)
 		</Category>
 	</Theme>
 </Themes>
