@@ -11,7 +11,9 @@
     <ClInclude Include="Dark.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Source.vstheme" />
+    <None Include="Source.vstheme">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D1A9B6C7-EDC5-4AD7-B890-096187A365EE}</ProjectGuid>
