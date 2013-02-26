@@ -5,6 +5,10 @@
       <Configuration>Dark</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Light|Win32">
+      <Configuration>Light</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Colors.h" />
@@ -25,11 +29,21 @@
     <PlatformToolset>v110</PlatformToolset>
     <ConfigurationType>Makefile</ConfigurationType>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Light|Win32'" Label="Configuration">
+    <PlatformToolset>v110</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dark|Win32'">
+    <NMakeBuildCommandLine>"$(VCInstallDir)bin/cl.exe" /EP /FI "$(ProjectDir)$(Configuration).h" "$(ProjectDir)Source.vstheme" &gt; "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"$(VCInstallDir)bin/cl.exe" /EP /FI "$(ProjectDir)$(Configuration).h" "$(ProjectDir)Source.vstheme" &gt; "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>del "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)Solarized-$(Configuration).vstheme</NMakeOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Light|Win32'">
     <NMakeBuildCommandLine>"$(VCInstallDir)bin/cl.exe" /EP /FI "$(ProjectDir)$(Configuration).h" "$(ProjectDir)Source.vstheme" &gt; "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>"$(VCInstallDir)bin/cl.exe" /EP /FI "$(ProjectDir)$(Configuration).h" "$(ProjectDir)Source.vstheme" &gt; "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>del "$(OutDir)Solarized-$(Configuration).vstheme"</NMakeCleanCommandLine>

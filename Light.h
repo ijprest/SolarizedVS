@@ -27,20 +27,20 @@
 #include "Colors.h"
 
 // This is the "Dark" theme
-#define THEME_NAME									"Solarized Dark"
-#define THEME_GUID									"{82903FA5-A781-4088-BE17-526DFECCD587}"
+#define THEME_NAME									"Solarized Light"
+#define THEME_GUID									"{3D64809F-6963-BA9F-4ECE-F477219BB15B}"
 
 // Symbolic names; these are the names we'll use elsewhere,
 // and we'll re-define them for different themes (e.g., light
 // vs. dark).
-#define background_accent						color_base03
-#define background									color_base02
-#define content_dim									color_base01
-#define content_faint								color_base00
-#define content_grey								color_base0
-#define content											color_base1
-#define content_bold								color_base2
-#define content_extrabold						color_base3
+#define background_accent						color_base3
+#define background									color_base2
+#define content_dim									color_base1
+#define content_faint								color_base0
+#define content_grey								color_base00
+#define content											color_base01
+#define content_bold								color_base02
+#define content_extrabold						color_base03
 
 #define theme_main									color_blue
 #define theme_accent								color_violet
@@ -49,8 +49,8 @@
 #define theme_bold									color_orange
 #define theme_changed								color_red
 
-#define theme_commentbackground			FF073E4B				// slightly brighter than color_base02; used as a comment background only
-#define theme_visiblewhitespace			FF094A5B				// dimmer than color_base01; used for visible-whitespace only
+#define theme_commentbackground			FFE0E0D0				// slightly darker than color_base2; used as a comment background only
+#define theme_visiblewhitespace			FFB3C1C8				// dimmer than color_base1; used for visible-whitespace only
 
 #include "Theme.h"
 
