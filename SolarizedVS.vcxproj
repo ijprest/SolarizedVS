@@ -13,6 +13,8 @@
   <ItemGroup>
     <ClInclude Include="Colors.h" />
     <ClInclude Include="Dark.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="Theme.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Source.vstheme">
