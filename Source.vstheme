@@ -1359,22 +1359,20 @@
 			COLOR("Form", unknown_color, background)
 
 			COLOR("Grid", content, background)
-			COLOR("GridActiveCell", content_bold, theme_main)
-
-			COLOR("GridActiveColumnHeader", unknown_color, unknown_color)
-			COLOR("GridActiveRowHeader", unknown_color, unknown_color)
+			COLOR("GridActiveCell", theme_selected_text, theme_selected)
+			COLOR("GridActiveColumnHeader", theme_selected_text, theme_selected)
+			COLOR("GridActiveRowHeader", theme_selected_text, theme_selected)
 
 			COLOR("GridBorder", void, theme_border)
-
-			COLOR("GridCell", unknown_color, unknown_color)
+			COLOR("GridCell", content, background)
 
 			COLOR("GridColumnHeader", theme_header_text, theme_header)
 			COLOR("GridColumnHeaderHover", theme_header_hover_text, theme_header_hover)
 			COLOR("GridColumnHeaderPressed", theme_header_down_text, theme_header_down)
 
-			COLOR("GridInactiveCell", unknown_color, unknown_color)
-			COLOR("GridRowHeader", unknown_color, unknown_color)
-			COLOR("GridSortedCell", unknown_color, unknown_color)
+			COLOR("GridInactiveCell", theme_selected_inactive_text, theme_selected_inactive)
+			COLOR("GridRowHeader", content, background)
+			COLOR("GridSortedCell", content, background)
 			COLOR("GroupBox", theme_headertext, background)
 
 			COLOR("HtmlControl", content, background)
