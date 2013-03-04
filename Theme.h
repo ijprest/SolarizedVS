@@ -67,6 +67,6 @@
 #define theme_button_hover_text				theme_main
 #define theme_button_down							content_extrabold
 #define theme_button_down_text				theme_main
-#define theme_button_checked					
-#define theme_button_checked_text			
+#define theme_button_checked					theme_main
+#define theme_button_checked_text			content_bold
 #define theme_button_checked_border		theme_main
