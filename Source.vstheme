@@ -518,7 +518,7 @@
 			COLOR("Medium", void, unknown_color)
 			COLOR("Menu", void, unknown_color)
 			COLOR("MenuText", void, unknown_color)
-			COLOR("NewProjectBackground", void, unknown_color)
+			COLOR("NewProjectBackground", void, background)
 			COLOR("NewProjectItemInactiveBegin", void, unknown_color)
 			COLOR("NewProjectItemInactiveBorder", void, unknown_color)
 			COLOR("NewProjectItemInactiveEnd", void, unknown_color)
