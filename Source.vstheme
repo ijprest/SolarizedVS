@@ -87,7 +87,7 @@
 			COLOR("ButtonHighlight", void, unknown_color)
 			COLOR("ButtonShadow", void, background_accent)
 			COLOR("ButtonText", void, content)
-			COLOR("CaptionText", void, unknown_color)
+			COLOR("CaptionText", void, content)
 			COLOR("ClassDesignerClassCompartment", void, unknown_color)
 			COLOR("ClassDesignerClassHeaderBackground", void, unknown_color)
 			COLOR("ClassDesignerCommentBorder", void, unknown_color)
